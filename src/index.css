@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7F3EA;
+    color: #1C1917;
+  }
+
+  h1, h2, h3, h4, .font-song {
+    font-family: var(--font-serif);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle archival scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EFE9DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7B299;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A3412;
+}
